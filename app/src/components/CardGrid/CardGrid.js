@@ -10,9 +10,9 @@ const CardGrid = () => {
   }
 
   return (
-    <div>
+    <div className='grid'>
       {data?.map((cardData) => (
-        <div key={cardData.id}>
+        <div className='grid__card' key={cardData.id}>
           <DataCard card={cardData} />
         </div>
       ))}

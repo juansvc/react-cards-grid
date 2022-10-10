@@ -1,0 +1,15 @@
+/// Media query mixin for min-width
+/// @param {Number} $breakpoint
+@mixin min-width($breakpoint) {
+  @media screen and (min-width: #{if(type-of($breakpoint) == 'string', unquote($breakpoint), inspect($breakpoint))}) {
+    @content;
+  }
+}
+
+/// Media query mixin for max-width
+/// @param {Number} $breakpoint
+@mixin max-width($breakpoint) {
+  @media screen and (max-width: #{if(type-of($breakpoint) == 'string', unquote($breakpoint), inspect($breakpoint))}) {
+    @content;
+  }
+}

@@ -2,10 +2,15 @@ import React from 'react';
 
 const DataCard = ({ card }) => {
   return (
-    <>
-      <h2>{card.title}</h2>
-      <p>{card.description}</p>
-    </>
+    <div className='card'>
+      <div className='card__image' role='img' aria-label='Card Img'>
+        <img src={card.image} alt='Product Img' loading='lazy' />
+      </div>
+      <div className='content'>
+        <h2 className='content__title'>{card.title}</h2>
+        <p className='content__description--truncated'>{card.description}</p>
+      </div>
+    </div>
   );
 };
 

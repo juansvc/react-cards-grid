@@ -1,0 +1,9 @@
+.grid {
+  &__card {
+    width: 50%;
+    float: left;
+    @include min-width($bp-small) {
+      width: 33%;
+    }
+  }
+}
