@@ -17,7 +17,7 @@ function useDataCard() {
         }
       })
       .then((postsData) => {
-        setData(postsData);
+        setData(postsData.cards);
       })
       .catch(() => {
         setHasFailed(true);
