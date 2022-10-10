@@ -7,7 +7,12 @@ const DataCard = ({ card }) => {
         <img src={card.image} alt='Product Img' loading='lazy' />
       </div>
       <div className='content'>
-        <h2 className='content__title'>{card.title}</h2>
+        <h2 className='content__title'>
+          {/* Check title after colon */}
+          {card.title.indexOf(':') !== -1
+            ? card.title.split(':')[1]
+            : card.title}
+        </h2>
         <p className='content__description--truncated'>{card.description}</p>
       </div>
     </div>
