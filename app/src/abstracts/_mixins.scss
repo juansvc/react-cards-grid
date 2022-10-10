@@ -1,4 +1,4 @@
-/// Media query mixin for min-width
+/// Media query for min-width
 /// @param {Number} $breakpoint
 @mixin min-width($breakpoint) {
   @media screen and (min-width: #{if(type-of($breakpoint) == 'string', unquote($breakpoint), inspect($breakpoint))}) {
@@ -6,10 +6,22 @@
   }
 }
 
-/// Media query mixin for max-width
+/// Media query for max-width
 /// @param {Number} $breakpoint
 @mixin max-width($breakpoint) {
   @media screen and (max-width: #{if(type-of($breakpoint) == 'string', unquote($breakpoint), inspect($breakpoint))}) {
     @content;
   }
+}
+
+// Square dark tag
+@mixin tag($font-size: 0.7rem) {
+  display: inline-flex;
+  font-size: $font-size;
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  background: $color-primary;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
 }
