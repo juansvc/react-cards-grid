@@ -20,7 +20,7 @@ const DataCard = ({ card }) => {
       </div>
       <div className='card__face card__face--back'>
         <div className='card__image' role='img' aria-label='Card Img'>
-          <img src={card.image} alt='Product Img' loading='lazy' />
+          <img src={card.image} alt='Product Img' />
         </div>
         <div className='content'>
           <h2 className='content__title'>{card.id}</h2>
@@ -32,7 +32,7 @@ const DataCard = ({ card }) => {
         </div>
         <a href={card.url} target='_blank' rel='noreferrer' className='cta'>
           {/* not necessary to include a svg or library only for one icon, look at this amazing chevron made by scss */}
-          LEARN MORE<span class='chevron--right'></span>
+          LEARN MORE<span className='chevron--right'></span>
         </a>
       </div>
     </div>

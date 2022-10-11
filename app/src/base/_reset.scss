@@ -13,25 +13,11 @@ html,
 body,
 div,
 span,
-object,
-iframe,
-figure,
-h1,
 h2,
-h3,
-h4,
-h5,
-h6,
+button,
 p,
 a,
-ol,
-ul,
-li,
-main,
-footer,
-header,
-nav,
-section {
+main {
   margin: 0;
   padding: 0;
   border: 0;
@@ -64,4 +50,19 @@ ul {
 a {
   text-decoration: none;
   color: $color-primary;
+}
+
+// Amazing chevron
+.chevron--right::before {
+  border-style: solid;
+  border-width: 0.15em 0.15em 0 0;
+  content: '';
+  display: inline-block;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(45deg);
+  vertical-align: top;
+  width: 0.6em;
+  height: 0.6em;
 }

@@ -1,9 +1,68 @@
+.tags {
+  margin: 0.5rem;
+  @include min-width($bp-small) {
+    margin: 1.25rem;
+  }
+  .button {
+    background: transparent;
+    margin: 0 1rem 1rem 0;
+    border: 1px $color-primary solid;
+    padding: 0.5rem;
+    cursor: pointer;
+    &:hover,
+    &--active {
+      color: #fff;
+      background: $color-primary;
+    }
+  }
+  .dropdown {
+    @include max-width($bp-small) {
+      width: 100%;
+      border: 1px solid $color-primary;
+    }
+    &--header {
+      padding: 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include min-width($bp-small) {
+        display: none;
+      }
+      .chevron--right {
+        &::before {
+          transition: all 0.2s ease-in-out;
+        }
+        &.open::before {
+          transform: rotate(135deg);
+        }
+      }
+    }
+    &--body {
+      @include max-width($bp-small) {
+        display: none;
+        .button {
+          width: 100%;
+          margin: 0;
+          text-align: left;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+        }
+      }
+      &.open {
+        display: block;
+      }
+    }
+  }
+}
+
 .grid {
   &__card {
     width: 50%;
     float: left;
     @include min-width($bp-small) {
-      width: 33%;
+      width: 33.3%;
     }
   }
 }
