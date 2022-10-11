@@ -58,7 +58,7 @@
     }
   }
   &__image {
-    @include max-width($bp-small) {
+    @include max-width($bp-x-small) {
       max-height: 7rem;
     }
     img {
