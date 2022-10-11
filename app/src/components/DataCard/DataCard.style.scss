@@ -32,6 +32,7 @@
     height: 100%;
     width: 100%;
     background: #fff;
+    cursor: default;
     // 3D transform
     position: absolute;
     transform: translateY(0deg);
@@ -43,6 +44,29 @@
       img {
         transform: rotateY(-180deg);
         opacity: 0.5;
+      }
+      // Call to action
+      .cta {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
+        text-transform: uppercase;
+        @include max-width($bp-small) {
+          font-size: 0.75rem;
+        }
+        .chevron--right::before {
+          border-style: solid;
+          border-width: 0.15em 0.15em 0 0;
+          content: '';
+          display: inline-block;
+          left: 0.15em;
+          position: relative;
+          top: 0.15em;
+          transform: rotate(45deg);
+          vertical-align: top;
+          width: 0.6em;
+          height: 0.6em;
+        }
       }
     }
   }

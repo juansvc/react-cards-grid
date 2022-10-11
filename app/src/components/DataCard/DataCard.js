@@ -23,12 +23,16 @@ const DataCard = ({ card }) => {
         </div>
         <div className='content'>
           <h2 className='content__title'>{card.id}</h2>
-          {/* <div className='tag'> */}
-          {card.tags.map((tag) => (
-            <span className='tag'>{tag}</span>
+          {card.tags?.map((tag) => (
+            <span key={tag} className='tag'>
+              {tag}
+            </span>
           ))}
-          {/* </div> */}
         </div>
+        <a href={card.url} target='_blank' rel='noreferrer' className='cta'>
+          {/* not necessary to include a svg or library only for one icon, look at this amazing chevron made by scss */}
+          Learn More <span class='chevron--right'></span>
+        </a>
       </div>
     </div>
   );

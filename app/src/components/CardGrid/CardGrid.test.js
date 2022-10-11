@@ -12,14 +12,18 @@ describe('The CardGrid component', () => {
     const cards = {
       cards: [
         {
-          id: 1,
-          title: 'First card',
-          description: 'This is the first card',
+          id: 'Nerium',
+          title: 'Reimagining the digital CX for Nerium International',
+          description:
+            'As Nerium International repositioned its brand and elevated.',
+          tags: ['CMS Selection', 'Experience Design'],
         },
         {
-          id: 2,
-          title: 'Second card',
-          description: 'This is the second card',
+          id: 'WesternDigital',
+          title: 'The new Western Digital site quadruples conversions',
+          description:
+            'As Western Digital was scaling back its investments in physical.',
+          tags: ['Digital Strategy', 'Analytics', 'Consulting'],
         },
       ],
     };
