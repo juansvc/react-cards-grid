@@ -78,6 +78,20 @@
       object-fit: contain;
     }
   }
+  &__flag {
+    color: #fff;
+    font-style: oblique;
+    transform: rotate(45deg);
+    text-align: center;
+    position: absolute;
+    top: 1.6rem;
+    right: -1.6rem;
+    border-bottom: 20px solid $color-primary;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 7.8rem;
+  }
   .content {
     margin: 0.5rem;
     @include min-width($bp-large) {

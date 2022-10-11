@@ -16,6 +16,7 @@ const DataCard = ({ card }) => {
           </h2>
           <p className='content__description--truncated'>{card.description}</p>
         </div>
+        {card.featured ? <div className='card__flag'>FEATURED</div> : null}
       </div>
       <div className='card__face card__face--back'>
         <div className='card__image' role='img' aria-label='Card Img'>
@@ -31,7 +32,7 @@ const DataCard = ({ card }) => {
         </div>
         <a href={card.url} target='_blank' rel='noreferrer' className='cta'>
           {/* not necessary to include a svg or library only for one icon, look at this amazing chevron made by scss */}
-          Learn More <span class='chevron--right'></span>
+          LEARN MORE<span class='chevron--right'></span>
         </a>
       </div>
     </div>
