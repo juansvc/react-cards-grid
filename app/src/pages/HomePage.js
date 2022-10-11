@@ -5,6 +5,7 @@ const HomePage = () => {
   return (
     <>
       <CardGrid />
+      <div>By Juan Vivanco</div>
     </>
   );
 };
