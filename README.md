@@ -1,6 +1,8 @@
-# Responsive Card Assignment for Hero Digital
+# React Responsive Card
 
-@juansvc
+## Overview
+
+React responsive web page that displays a card-based grid.
 
 ## Technologies Used
 
@@ -21,11 +23,6 @@
 - `npm run start` to run frontend react app
 - `npm run start` to run test and mock api
 
-## Overview
-
-Please create a responsive web page that displays a card-based grid based on the requirements below. We have provided mockups to assist in styling, please follow them as closely as possible, as this assignment tests for visual fidelity.
-
-## Requirements
 
 - Filter Grid Component: 3 columns for desktop, 2 for mobile.
 - Content cards flip on hover for desktop, flip on tap for mobile. 3D CSS transform.
@@ -56,33 +53,3 @@ Please create a responsive web page that displays a card-based grid based on the
   "featured": 0
 }
 ```
-
-When we open the repo for review, we should be able to do the following (from project root):
-
-- Run `npm install` to install dependencies
-- Run `npm start` and `npm run test` to view the web page locally (with the mock API endpoint returning a mock success response)
-
-## Mockups
-
-The `/designs` folder contains all the mockups you need to complete the assignment. There's a mockup for the `Data Card Component`, one for `Filter Grid Component Desktop` and a corresponding one for `Filter Grid Component Mobile`.
-
-## Evaluation Criteria
-
-- **JavaScript** best practices
-- **React** as your Frontend Framework
-- Show us your work through your commit history
-- We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program
-- Completeness: did you complete the features?
-- Correctness: does the functionality act in sensible, thought-out ways?
-- Maintainability: is it written in a clean, maintainable way?
-- Ease of use: Can we run `npm build && npm start` to run the whole thing?
-
-## Deliverables
-
-Make sure to include all source code in the repository.
-
-Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
-
-All the best and happy coding,
-
-The Hero Digital Team
